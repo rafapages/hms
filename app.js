@@ -8,31 +8,6 @@ const TILTS = [-1.5, 1, -0.5, 1.6, -1.1, 0.6];
 const STYLE_URL = 'https://tiles.openfreemap.org/styles/positron';
 const PLAY_STEP_MS = 900;
 
-// Countries with H&M stores (approximate; edit freely) and a main city to fly to.
-// Used only for the "¿Próximo destino?" sticker.
-const HM_MARKETS = [
-  ['AE', 25.20, 55.27], ['AL', 41.33, 19.82], ['AT', 48.21, 16.37], ['AU', -33.87, 151.21],
-  ['BA', 43.86, 18.41], ['BE', 50.85, 4.35], ['BG', 42.70, 23.32], ['BH', 26.23, 50.59],
-  ['CA', 43.65, -79.38], ['CH', 47.37, 8.54], ['CL', -33.45, -70.67], ['CN', 31.23, 121.47],
-  ['CO', 4.71, -74.07], ['CR', 9.93, -84.08], ['CY', 35.17, 33.36], ['CZ', 50.08, 14.44],
-  ['DE', 52.52, 13.40], ['DK', 55.68, 12.57], ['EC', -0.18, -78.47], ['EE', 59.44, 24.75],
-  ['EG', 30.04, 31.24], ['ES', 40.42, -3.70], ['FI', 60.17, 24.94], ['FR', 48.86, 2.35],
-  ['GB', 51.51, -0.13], ['GE', 41.72, 44.79], ['GR', 37.98, 23.73], ['GT', 14.63, -90.51],
-  ['HK', 22.32, 114.17], ['HR', 45.81, 15.98], ['HU', 47.50, 19.04], ['ID', -6.21, 106.85],
-  ['IE', 53.35, -6.26], ['IL', 32.09, 34.78], ['IN', 28.61, 77.21], ['IS', 64.15, -21.94],
-  ['IT', 41.90, 12.50], ['JO', 31.95, 35.93], ['JP', 35.68, 139.76], ['KH', 11.56, 104.93],
-  ['KR', 37.57, 126.98], ['KW', 29.38, 47.99], ['KZ', 43.24, 76.89], ['LB', 33.89, 35.50],
-  ['LT', 54.69, 25.28], ['LU', 49.61, 6.13], ['LV', 56.95, 24.11], ['MA', 33.57, -7.59],
-  ['ME', 42.44, 19.26], ['MK', 42.00, 21.43], ['MT', 35.90, 14.51], ['MX', 19.43, -99.13],
-  ['MY', 3.14, 101.69], ['NL', 52.37, 4.90], ['NO', 59.91, 10.75], ['NZ', -36.85, 174.76],
-  ['OM', 23.59, 58.41], ['PA', 8.98, -79.52], ['PE', -12.05, -77.04], ['PH', 14.60, 120.98],
-  ['PL', 52.23, 21.01], ['PR', 18.47, -66.11], ['PT', 38.72, -9.14], ['QA', 25.29, 51.53],
-  ['RO', 44.43, 26.10], ['RS', 44.79, 20.45], ['SA', 24.71, 46.68], ['SE', 59.33, 18.07],
-  ['SG', 1.29, 103.85], ['SI', 46.06, 14.51], ['SK', 48.15, 17.11], ['TH', 13.76, 100.50],
-  ['TR', 41.01, 28.98], ['TW', 25.03, 121.57], ['UA', 50.45, 30.52], ['US', 40.71, -74.01],
-  ['UY', -34.90, -56.16], ['VN', 10.82, 106.63], ['ZA', -26.20, 28.05],
-];
-
 // ---------- helpers ----------
 
 const $ = (sel, el = document) => el.querySelector(sel);
@@ -71,10 +46,6 @@ function km(a, b) {
 function plural(n, one, many) {
   return `${n} ${n === 1 ? one : many}`;
 }
-
-const regionNames = (() => {
-  try { return new Intl.DisplayNames(['es'], { type: 'region' }); } catch { return null; }
-})();
 
 function precLabel(p, short) {
   if (p.precision === 'gps') return short ? 'GPS' : 'Lugar exacto (GPS)';
@@ -141,7 +112,7 @@ function visiblePhotos(stack) {
   return stack.photos.filter(inTimeline);
 }
 
-// ---------- stats + easter egg ----------
+// ---------- stats ----------
 
 function renderStats() {
   const photos = state.photos;
@@ -164,41 +135,6 @@ function renderStats() {
     `<div class="stat"><span class="stat-n">${esc(n)}</span><span class="stat-l">${esc(l)}</span></div>`).join('');
   $('#miniStats').textContent = `${plural(photos.length, 'foto', 'fotos')} · ${plural(countries.size, 'país', 'países')}`;
   $('[data-lede-gallery]').textContent = `Las ${photos.length} fotos, ordenadas por fecha.`;
-}
-
-function nextDestination() {
-  const visited = new Set(state.photos.map(p => p.countryCode));
-  let best = null;
-  for (const [code, lat, lon] of HM_MARKETS) {
-    if (visited.has(code)) continue;
-    const d = km(MADRID, [lat, lon]);
-    if (!best || d < best.d) best = { code, lat, lon, d };
-  }
-  return best;
-}
-
-function setupSticker() {
-  const dest = nextDestination();
-  if (!dest) return;
-  const name = regionNames?.of(dest.code) || dest.code;
-  const btn = $('#sticker');
-  $('#stickerCountry').textContent = name;
-  btn.setAttribute('aria-label', `¿Próximo destino? ${name}. Ver en el mapa`);
-  btn.hidden = false;
-  let marker = null;
-  btn.addEventListener('click', () => {
-    if (!map) return;
-    closeCard();
-    map.flyTo({ center: [dest.lon, dest.lat], zoom: 4.5, duration: reducedMotion.matches ? 0 : 2200 });
-    if (!marker) {
-      const el = document.createElement('div');
-      el.className = 'dest-pin';
-      el.textContent = '?';
-      el.title = name;
-      marker = new maplibregl.Marker({ element: el }).setLngLat([dest.lon, dest.lat]);
-    }
-    marker.addTo(map);
-  });
 }
 
 // ---------- map ----------
@@ -809,7 +745,6 @@ async function main() {
 
   placeControls();
   initMap();
-  setupSticker();
   route();
 }
 

@@ -233,22 +233,6 @@ button { font: inherit; color: inherit; }
   display: inline-flex; align-items: center; justify-content: center;
 }
 
-.sticker {
-  position: absolute; right: 28px; bottom: 44px; z-index: 2;
-  transform: rotate(4deg);
-  background: var(--paper-2);
-  border: 2px dashed var(--red);
-  border-radius: 10px;
-  padding: 10px 16px;
-  display: flex; flex-direction: column; align-items: flex-start;
-  cursor: pointer;
-  font-family: var(--f-hand);
-  transition: transform .2s;
-}
-.sticker:hover { transform: rotate(1deg) scale(1.04); }
-.sticker-q { font-size: 26px; font-weight: 700; line-height: 1.1; }
-.sticker-a { font-size: 22px; font-weight: 700; line-height: 1.1; color: var(--red); }
-
 /* ---------- pins and clusters (MapLibre HTML markers) ---------- */
 
 .pin, .cluster {
@@ -283,12 +267,6 @@ button { font: inherit; color: inherit; }
 .cluster.big { width: 52px; height: 52px; font-size: 17px; }
 .cluster.hollow { background: var(--paper-2); color: var(--red); border: 3px solid var(--red); box-shadow: 0 0 0 4px rgba(251,248,242,.9), 0 2px 6px rgba(43,37,34,.3); }
 .cluster.selected { width: 40px; height: 40px; font-size: 15px; box-shadow: 0 0 0 7px rgba(200,16,46,.22), 0 2px 6px rgba(43,37,34,.3); }
-.dest-pin {
-  width: 30px; height: 30px; border-radius: 50%;
-  border: 2px dashed var(--red); background: var(--paper-2); color: var(--red);
-  font: 700 22px/1 var(--f-hand);
-  display: flex; align-items: center; justify-content: center;
-}
 
 /* ---------- photo card (desktop hover) ---------- */
 
@@ -592,12 +570,6 @@ button { font: inherit; color: inherit; }
   }
   .map-wrap .zoom, .map-wrap .legend { display: none; }
   .map-controls-left:empty { display: none; }
-  .sticker {
-    right: 16px; bottom: calc(36px + env(safe-area-inset-bottom));
-    padding: 6px 12px;
-  }
-  .sticker-q { font-size: 20px; }
-  .sticker-a { font-size: 18px; }
   .card { display: none !important; }
 
   .lightbox { padding: 16px 12px calc(16px + env(safe-area-inset-bottom)); gap: 12px; }
