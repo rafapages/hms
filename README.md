@@ -2,8 +2,6 @@
 
 Fun family project: **La Vuelta al Mundo en H&M**, a map of every family photo taken at an H&M store. Served at rafapages.com/hms/ via GitHub Pages (no build step for the site).
 
-- Spec: [docs/H&M Photo Map Spec.md](docs/H&M%20Photo%20Map%20Spec.md)
-
 ## Site
 
 `index.html`, `style.css`, `app.js` and `photos.json`. MapLibre GL + OpenFreeMap positron (tinted), no API keys. To preview locally:
