@@ -1,0 +1,758 @@
+{
+  "reverse:1.284,103.852": {
+    "city": "Singapur",
+    "country": "Singapur",
+    "countryCode": "SG",
+    "display": "Singapur",
+    "lat": 1.28992,
+    "lon": 103.85191,
+    "type": "city"
+  },
+  "reverse:13.726,100.509": {
+    "city": "Bangkok",
+    "country": "Tailandia",
+    "countryCode": "TH",
+    "display": "แขวงคลองต้นไทร, เขตคลองสาน, Bangkok, 10600, Tailandia",
+    "lat": 13.72046,
+    "lon": 100.50453,
+    "type": "quarter"
+  },
+  "reverse:20.628,-87.072": {
+    "city": "Playa del Carmen",
+    "country": "México",
+    "countryCode": "MX",
+    "display": "Playa del Carmen, Quintana Roo, México",
+    "lat": 20.64628,
+    "lon": -87.08079,
+    "type": "city"
+  },
+  "reverse:34.015,-118.495": {
+    "city": "Santa Mónica",
+    "country": "Estados Unidos de América",
+    "countryCode": "US",
+    "display": "Santa Mónica, Condado de Los Ángeles, California, Estados Unidos de América",
+    "lat": 34.01947,
+    "lon": -118.49123,
+    "type": "city"
+  },
+  "reverse:34.101,-118.341": {
+    "city": "Los Ángeles",
+    "country": "Estados Unidos de América",
+    "countryCode": "US",
+    "display": "Los Ángeles, Condado de Los Ángeles, California, Estados Unidos de América",
+    "lat": 34.05369,
+    "lon": -118.24277,
+    "type": "city"
+  },
+  "reverse:34.669,135.501": {
+    "city": "Osaka",
+    "country": "Japón",
+    "countryCode": "JP",
+    "display": "Osaka, Prefectura de Osaka, Japón",
+    "lat": 34.69376,
+    "lon": 135.50145,
+    "type": "city"
+  },
+  "reverse:36.719,-4.423": {
+    "city": "Málaga",
+    "country": "España",
+    "countryCode": "ES",
+    "display": "Málaga, Málaga-Costa del Sol, Málaga, Andalucía, España",
+    "lat": 36.76479,
+    "lon": -4.4422,
+    "type": "municipality"
+  },
+  "reverse:37.976,23.729": {
+    "city": "Atenas",
+    "country": "Grecia",
+    "countryCode": "GR",
+    "display": "Atenas, Δήμος Αθηναίων, Περιφερειακή Ενότητα Κεντρικού Τομέα Αθηνών, Περιφέρεια Αττικής, Αποκεντρωμένη Διοίκηση Αττικής, 105 57, Grecia",
+    "lat": 37.97556,
+    "lon": 23.73483,
+    "type": "city"
+  },
+  "reverse:38.122,13.357": {
+    "city": "Palermo",
+    "country": "Italia",
+    "countryCode": "IT",
+    "display": "Palermo, Sicilia, Italia",
+    "lat": 38.11123,
+    "lon": 13.35244,
+    "type": "city"
+  },
+  "reverse:43.617,13.515": {
+    "city": "Ancona",
+    "country": "Italia",
+    "countryCode": "IT",
+    "display": "Ancona, Marcas, Italia",
+    "lat": 43.61701,
+    "lon": 13.5171,
+    "type": "city"
+  },
+  "reverse:44.840,-0.574": {
+    "city": "Burdeos",
+    "country": "Francia",
+    "countryCode": "FR",
+    "display": "Burdeos, Gironda, Nueva Aquitania, Francia metropolitana, Francia",
+    "lat": 44.84123,
+    "lon": -0.58004,
+    "type": "city"
+  },
+  "reverse:45.070,7.684": {
+    "city": "Turín",
+    "country": "Italia",
+    "countryCode": "IT",
+    "display": "Turín, Piamonte, Italia",
+    "lat": 45.06776,
+    "lon": 7.68249,
+    "type": "city"
+  },
+  "reverse:47.496,19.051": {
+    "city": "Budapest",
+    "country": "Hungría",
+    "countryCode": "HU",
+    "display": "Budapest, Hungría",
+    "lat": 47.49788,
+    "lon": 19.04024,
+    "type": "city"
+  },
+  "reverse:49.612,6.128": {
+    "city": "Luxemburgo",
+    "country": "Luxemburgo",
+    "countryCode": "LU",
+    "display": "Luxemburgo, Canton Luxembourg, Luxemburgo",
+    "lat": 49.61128,
+    "lon": 6.1298,
+    "type": "city"
+  },
+  "reverse:50.775,6.090": {
+    "city": "Aquisgrán",
+    "country": "Alemania",
+    "countryCode": "DE",
+    "display": "Aquisgrán, Städteregion Aachen, Renania del Norte-Westfalia, Alemania",
+    "lat": 50.77635,
+    "lon": 6.08386,
+    "type": "city"
+  },
+  "reverse:50.889,5.977": {
+    "city": "Heerlen",
+    "country": "Países Bajos",
+    "countryCode": "NL",
+    "display": "Heerlen, Limburgo, Países Bajos",
+    "lat": 50.88767,
+    "lon": 5.97733,
+    "type": "city"
+  },
+  "reverse:51.226,6.782": {
+    "city": "Düsseldorf",
+    "country": "Alemania",
+    "countryCode": "DE",
+    "display": "Düsseldorf, Renania del Norte-Westfalia, Alemania",
+    "lat": 51.2254,
+    "lon": 6.77631,
+    "type": "city"
+  },
+  "reverse:52.092,5.118": {
+    "city": "Utrecht",
+    "country": "Países Bajos",
+    "countryCode": "NL",
+    "display": "Utrecht, Países Bajos",
+    "lat": 52.08099,
+    "lon": 5.12768,
+    "type": "city_district"
+  },
+  "reverse:52.205,0.123": {
+    "city": "Cambridge",
+    "country": "Reino Unido",
+    "countryCode": "GB",
+    "display": "Cambridge, Cambridgeshire, Cambridgeshire and Peterborough, Inglaterra, Reino Unido",
+    "lat": 52.19758,
+    "lon": 0.13915,
+    "type": "city"
+  },
+  "reverse:52.439,4.821": {
+    "city": "Zaandam",
+    "country": "Países Bajos",
+    "countryCode": "NL",
+    "display": "Zaandam, Zaanstad, Holanda Septentrional, Países Bajos",
+    "lat": 52.44249,
+    "lon": 4.82986,
+    "type": "town"
+  },
+  "reverse:53.349,-6.265": {
+    "city": "Dublín",
+    "country": "Irlanda",
+    "countryCode": "IE",
+    "display": "Dublín, County Dublin, Leinster, Irlanda",
+    "lat": 53.34938,
+    "lon": -6.26056,
+    "type": "city"
+  },
+  "reverse:55.858,-4.254": {
+    "city": "Glasgow",
+    "country": "Reino Unido",
+    "countryCode": "GB",
+    "display": "Glasgow, Glasgow City, Escocia, G2 1AR, Reino Unido",
+    "lat": 55.86115,
+    "lon": -4.25017,
+    "type": "city"
+  },
+  "reverse:55.953,-3.192": {
+    "city": "Edimburgo",
+    "country": "Reino Unido",
+    "countryCode": "GB",
+    "display": "Edimburgo, Escocia, Reino Unido",
+    "lat": 55.95335,
+    "lon": -3.18837,
+    "type": "city"
+  },
+  "reverse:59.933,30.349": {
+    "city": "San Petersburgo",
+    "country": "Rusia",
+    "countryCode": "RU",
+    "display": "San Petersburgo, Distrito federal del Noroeste, Rusia",
+    "lat": 59.93873,
+    "lon": 30.31623,
+    "type": "city"
+  },
+  "search:aachen": {
+    "city": "Aquisgrán",
+    "country": "Alemania",
+    "countryCode": "DE",
+    "display": "Aquisgrán, Städteregion Aachen, Renania del Norte-Westfalia, Alemania",
+    "lat": 50.77635,
+    "lon": 6.08386,
+    "type": "city"
+  },
+  "search:alemania": {
+    "city": "Alemania",
+    "country": "Alemania",
+    "countryCode": "DE",
+    "display": "Alemania",
+    "lat": 51.16382,
+    "lon": 10.44783,
+    "type": "country"
+  },
+  "search:atenas": {
+    "city": "Atenas",
+    "country": "Grecia",
+    "countryCode": "GR",
+    "display": "Atenas, Δήμος Αθηναίων, Περιφερειακή Ενότητα Κεντρικού Τομέα Αθηνών, Περιφέρεια Αττικής, Αποκεντρωμένη Διοίκηση Αττικής, 105 57, Grecia",
+    "lat": 37.97556,
+    "lon": 23.73483,
+    "type": "city"
+  },
+  "search:badajoz": {
+    "city": "Badajoz",
+    "country": "España",
+    "countryCode": "ES",
+    "display": "Badajoz, Extremadura, España",
+    "lat": 38.87819,
+    "lon": -6.97011,
+    "type": "city"
+  },
+  "search:bangkok": {
+    "city": "Bangkok",
+    "country": "Tailandia",
+    "countryCode": "TH",
+    "display": "Bangkok, Tailandia",
+    "lat": 13.75249,
+    "lon": 100.49351,
+    "type": "city"
+  },
+  "search:berlin": {
+    "city": "Berlín",
+    "country": "Alemania",
+    "countryCode": "DE",
+    "display": "Berlín, Alemania",
+    "lat": 52.51739,
+    "lon": 13.39513,
+    "type": "city"
+  },
+  "search:bordeaux, france": {
+    "city": "Burdeos",
+    "country": "Francia",
+    "countryCode": "FR",
+    "display": "Burdeos, Gironda, Nueva Aquitania, Francia metropolitana, Francia",
+    "lat": 44.84123,
+    "lon": -0.58004,
+    "type": "city"
+  },
+  "search:budapest": {
+    "city": "Budapest",
+    "country": "Hungría",
+    "countryCode": "HU",
+    "display": "Budapest, Hungría",
+    "lat": 47.49788,
+    "lon": 19.04024,
+    "type": "city"
+  },
+  "search:cambridge": {
+    "city": "Cambridge",
+    "country": "Reino Unido",
+    "countryCode": "GB",
+    "display": "Cambridge, Cambridgeshire, Cambridgeshire and Peterborough, Inglaterra, Reino Unido",
+    "lat": 52.19758,
+    "lon": 0.13915,
+    "type": "city"
+  },
+  "search:colonia": {
+    "city": "Colonia",
+    "country": "Alemania",
+    "countryCode": "DE",
+    "display": "Colonia, Renania del Norte-Westfalia, Alemania",
+    "lat": 50.93836,
+    "lon": 6.95997,
+    "type": "city"
+  },
+  "search:copenhague": {
+    "city": "Copenhague",
+    "country": "Dinamarca",
+    "countryCode": "DK",
+    "display": "Copenhague, Municipio de Copenhague, Región Capital, 1357, Dinamarca",
+    "lat": 55.68672,
+    "lon": 12.57007,
+    "type": "city"
+  },
+  "search:córdoba": {
+    "city": "Córdoba",
+    "country": "España",
+    "countryCode": "ES",
+    "display": "Córdoba, Andalucía, España",
+    "lat": 37.88458,
+    "lon": -4.77601,
+    "type": "city"
+  },
+  "search:dublin": {
+    "city": "Dublín",
+    "country": "Irlanda",
+    "countryCode": "IE",
+    "display": "Dublín, County Dublin, Leinster, Irlanda",
+    "lat": 53.34938,
+    "lon": -6.26056,
+    "type": "city"
+  },
+  "search:dusseldorf": {
+    "city": "Düsseldorf",
+    "country": "Alemania",
+    "countryCode": "DE",
+    "display": "Düsseldorf, Renania del Norte-Westfalia, Alemania",
+    "lat": 51.2254,
+    "lon": 6.77631,
+    "type": "city"
+  },
+  "search:düsseldorf": {
+    "city": "Düsseldorf",
+    "country": "Alemania",
+    "countryCode": "DE",
+    "display": "Düsseldorf, Renania del Norte-Westfalia, Alemania",
+    "lat": 51.2254,
+    "lon": 6.77631,
+    "type": "city"
+  },
+  "search:edimburgo": {
+    "city": "Edimburgo",
+    "country": "Reino Unido",
+    "countryCode": "GB",
+    "display": "Edimburgo, Escocia, Reino Unido",
+    "lat": 55.95335,
+    "lon": -3.18837,
+    "type": "city"
+  },
+  "search:frankfurt am main": {
+    "city": "Fráncfort del Meno",
+    "country": "Alemania",
+    "countryCode": "DE",
+    "display": "Fráncfort del Meno, Hesse, Alemania",
+    "lat": 50.11064,
+    "lon": 8.68209,
+    "type": "city"
+  },
+  "search:glasgow": {
+    "city": "Glasgow",
+    "country": "Reino Unido",
+    "countryCode": "GB",
+    "display": "Glasgow, Glasgow City, Escocia, G2 1AL, Reino Unido",
+    "lat": 55.86115,
+    "lon": -4.25017,
+    "type": "city"
+  },
+  "search:génova": {
+    "city": "Génova",
+    "country": "Italia",
+    "countryCode": "IT",
+    "display": "Génova, Liguria, Italia",
+    "lat": 44.40726,
+    "lon": 8.93386,
+    "type": "city"
+  },
+  "search:heerlen": {
+    "city": "Heerlen",
+    "country": "Países Bajos",
+    "countryCode": "NL",
+    "display": "Heerlen, Limburgo, Países Bajos",
+    "lat": 50.87752,
+    "lon": 5.98151,
+    "type": "municipality"
+  },
+  "search:helsinki": {
+    "city": "Helsinki",
+    "country": "Finlandia",
+    "countryCode": "FI",
+    "display": "Helsinki, Helsingin seutukunta, Uusimaa, Manner-Suomi, Finlandia",
+    "lat": 60.16662,
+    "lon": 24.94354,
+    "type": "city"
+  },
+  "search:hollywood": {
+    "city": "Hollywood",
+    "country": "Estados Unidos de América",
+    "countryCode": "US",
+    "display": "Hollywood, Los Ángeles, Condado de Los Ángeles, California, 90028, Estados Unidos de América",
+    "lat": 34.098,
+    "lon": -118.32952,
+    "type": "suburb"
+  },
+  "search:las palmas": {
+    "city": "Las Palmas de Gran Canaria",
+    "country": "España",
+    "countryCode": "ES",
+    "display": "Las Palmas de Gran Canaria, Las Palmas, Canarias, España",
+    "lat": 28.12887,
+    "lon": -15.4349,
+    "type": "city"
+  },
+  "search:lisboa": {
+    "city": "Lisboa",
+    "country": "Portugal",
+    "countryCode": "PT",
+    "display": "Lisboa, Portugal",
+    "lat": 38.70775,
+    "lon": -9.13659,
+    "type": "city"
+  },
+  "search:london, england": {
+    "city": "Gran Londres",
+    "country": "Reino Unido",
+    "countryCode": "GB",
+    "display": "Gran Londres, Inglaterra, Reino Unido",
+    "lat": 51.50745,
+    "lon": -0.12777,
+    "type": "city"
+  },
+  "search:londres": {
+    "city": "Gran Londres",
+    "country": "Reino Unido",
+    "countryCode": "GB",
+    "display": "Gran Londres, Inglaterra, Reino Unido",
+    "lat": 51.50745,
+    "lon": -0.12777,
+    "type": "city"
+  },
+  "search:luxemburgo": {
+    "city": "Luxemburgo",
+    "country": "Luxemburgo",
+    "countryCode": "LU",
+    "display": "Luxemburgo, Canton Luxembourg, Luxemburgo",
+    "lat": 49.61128,
+    "lon": 6.1298,
+    "type": "city"
+  },
+  "search:maastricht": {
+    "city": "Maastricht",
+    "country": "Países Bajos",
+    "countryCode": "NL",
+    "display": "Maastricht, Limburgo, Países Bajos",
+    "lat": 50.85799,
+    "lon": 5.69699,
+    "type": "municipality"
+  },
+  "search:madrid": {
+    "city": "Madrid",
+    "country": "España",
+    "countryCode": "ES",
+    "display": "Madrid, Comunidad de Madrid, España",
+    "lat": 40.41678,
+    "lon": -3.70351,
+    "type": "city"
+  },
+  "search:malmo": {
+    "city": "Malmö",
+    "country": "Suecia",
+    "countryCode": "SE",
+    "display": "Malmö, Malmö kommun, Provincia de Escania, Suecia",
+    "lat": 55.60529,
+    "lon": 13.00016,
+    "type": "city"
+  },
+  "search:munich": {
+    "city": "Múnich",
+    "country": "Alemania",
+    "countryCode": "DE",
+    "display": "Múnich, Baviera, Alemania",
+    "lat": 48.13711,
+    "lon": 11.57538,
+    "type": "city"
+  },
+  "search:málaga": {
+    "city": "Málaga",
+    "country": "España",
+    "countryCode": "ES",
+    "display": "Málaga, Málaga-Costa del Sol, Málaga, Andalucía, España",
+    "lat": 36.76479,
+    "lon": -4.4422,
+    "type": "municipality"
+  },
+  "search:napoles": {
+    "city": "Nápoles",
+    "country": "Italia",
+    "countryCode": "IT",
+    "display": "Nápoles, Campania, Italia",
+    "lat": 40.83588,
+    "lon": 14.24877,
+    "type": "city"
+  },
+  "search:new york": {
+    "city": "Nueva York",
+    "country": "Estados Unidos de América",
+    "countryCode": "US",
+    "display": "Nueva York, Estados Unidos de América",
+    "lat": 40.71273,
+    "lon": -74.00602,
+    "type": "city"
+  },
+  "search:new york city": {
+    "city": "Nueva York",
+    "country": "Estados Unidos de América",
+    "countryCode": "US",
+    "display": "Nueva York, Estados Unidos de América",
+    "lat": 40.71273,
+    "lon": -74.00602,
+    "type": "city"
+  },
+  "search:osaka": {
+    "city": "Osaka",
+    "country": "Japón",
+    "countryCode": "JP",
+    "display": "Osaka, Prefectura de Osaka, Japón",
+    "lat": 34.69376,
+    "lon": 135.50145,
+    "type": "city"
+  },
+  "search:palencia": {
+    "city": "Palencia",
+    "country": "España",
+    "countryCode": "ES",
+    "display": "Palencia, Castilla y León, España",
+    "lat": 41.99516,
+    "lon": -4.54427,
+    "type": "city"
+  },
+  "search:palermo": {
+    "city": "Palermo",
+    "country": "Italia",
+    "countryCode": "IT",
+    "display": "Palermo, Sicilia, Italia",
+    "lat": 38.11123,
+    "lon": 13.35244,
+    "type": "city"
+  },
+  "search:parís": {
+    "city": "París",
+    "country": "Francia",
+    "countryCode": "FR",
+    "display": "París, Isla de Francia, Francia metropolitana, Francia",
+    "lat": 48.85889,
+    "lon": 2.32004,
+    "type": "suburb"
+  },
+  "search:playa del carmen": {
+    "city": "Playa del Carmen",
+    "country": "México",
+    "countryCode": "MX",
+    "display": "Playa del Carmen, Quintana Roo, México",
+    "lat": 20.64628,
+    "lon": -87.08079,
+    "type": "city"
+  },
+  "search:praga": {
+    "city": "Praga",
+    "country": "Chequia",
+    "countryCode": "CZ",
+    "display": "Praga, Chequia",
+    "lat": 50.08747,
+    "lon": 14.42125,
+    "type": "city"
+  },
+  "search:roma": {
+    "city": "Roma",
+    "country": "Italia",
+    "countryCode": "IT",
+    "display": "Roma, Roma Capitale, Lacio, Italia",
+    "lat": 41.89332,
+    "lon": 12.48293,
+    "type": "city"
+  },
+  "search:san francisco": {
+    "city": "San Francisco",
+    "country": "Estados Unidos de América",
+    "countryCode": "US",
+    "display": "San Francisco, California, Estados Unidos de América",
+    "lat": 37.78794,
+    "lon": -122.40752,
+    "type": "city"
+  },
+  "search:san petersburgo": {
+    "city": "San Petersburgo",
+    "country": "Rusia",
+    "countryCode": "RU",
+    "display": "San Petersburgo, Distrito federal del Noroeste, Rusia",
+    "lat": 59.93873,
+    "lon": 30.31623,
+    "type": "city"
+  },
+  "search:santa monica": {
+    "city": "Santa Mónica",
+    "country": "Estados Unidos de América",
+    "countryCode": "US",
+    "display": "Santa Mónica, Condado de Los Ángeles, California, Estados Unidos de América",
+    "lat": 34.01947,
+    "lon": -118.49123,
+    "type": "city"
+  },
+  "search:santiago de chile": {
+    "city": "Santiago",
+    "country": "Chile",
+    "countryCode": "CL",
+    "display": "Santiago, Provincia de Santiago, Región Metropolitana de Santiago, 8320000, Chile",
+    "lat": -33.4377,
+    "lon": -70.65107,
+    "type": "city"
+  },
+  "search:shenzhen": {
+    "city": "Shenzhen",
+    "country": "China",
+    "countryCode": "CN",
+    "display": "Shenzhen, Provincia de Cantón, China",
+    "lat": 22.54457,
+    "lon": 114.05454,
+    "type": "city"
+  },
+  "search:singapur": {
+    "city": "Singapur",
+    "country": "Singapur",
+    "countryCode": "SG",
+    "display": "Singapur",
+    "lat": 1.28992,
+    "lon": 103.85191,
+    "type": "city"
+  },
+  "search:sofia": {
+    "city": "Sofía",
+    "country": "Bulgaria",
+    "countryCode": "BG",
+    "display": "Sofía, Средец, Столична, София-град, Bulgaria",
+    "lat": 42.6977,
+    "lon": 23.32174,
+    "type": "city"
+  },
+  "search:stuttgart": {
+    "city": "Stuttgart",
+    "country": "Alemania",
+    "countryCode": "DE",
+    "display": "Stuttgart, Baden-Wurtemberg, Alemania",
+    "lat": 48.77845,
+    "lon": 9.18001,
+    "type": "city"
+  },
+  "search:taipei": {
+    "city": "Taipéi",
+    "country": "Taiwán",
+    "countryCode": "TW",
+    "display": "Taipéi, Taiwán",
+    "lat": 25.03752,
+    "lon": 121.56368,
+    "type": "city"
+  },
+  "search:tokio": {
+    "city": "Tokio",
+    "country": "Japón",
+    "countryCode": "JP",
+    "display": "Tokio, Japón",
+    "lat": 35.67686,
+    "lon": 139.76389,
+    "type": "province"
+  },
+  "search:tokyo": {
+    "city": "Tokio",
+    "country": "Japón",
+    "countryCode": "JP",
+    "display": "Tokio, Japón",
+    "lat": 35.67686,
+    "lon": 139.76389,
+    "type": "province"
+  },
+  "search:turin": {
+    "city": "Turín",
+    "country": "Italia",
+    "countryCode": "IT",
+    "display": "Turín, Piamonte, Italia",
+    "lat": 45.06776,
+    "lon": 7.68249,
+    "type": "city"
+  },
+  "search:turín": {
+    "city": "Turín",
+    "country": "Italia",
+    "countryCode": "IT",
+    "display": "Turín, Piamonte, Italia",
+    "lat": 45.06776,
+    "lon": 7.68249,
+    "type": "city"
+  },
+  "search:utrecht": {
+    "city": "Utrecht",
+    "country": "Países Bajos",
+    "countryCode": "NL",
+    "display": "Utrecht, Países Bajos",
+    "lat": 52.0907,
+    "lon": 5.12156,
+    "type": "city"
+  },
+  "search:vancouver": {
+    "city": "Vancouver",
+    "country": "Canadá",
+    "countryCode": "CA",
+    "display": "Vancouver, Metro Vancouver Regional District, Columbia Británica, Canadá",
+    "lat": 49.26087,
+    "lon": -123.11395,
+    "type": "city"
+  },
+  "search:viena": {
+    "city": "Viena",
+    "country": "Austria",
+    "countryCode": "AT",
+    "display": "Viena, Austria",
+    "lat": 48.20835,
+    "lon": 16.3725,
+    "type": "city"
+  },
+  "search:zaandam": {
+    "city": "Zaandam",
+    "country": "Países Bajos",
+    "countryCode": "NL",
+    "display": "Zaandam, Zaanstad, Holanda Septentrional, Países Bajos",
+    "lat": 52.44249,
+    "lon": 4.82986,
+    "type": "town"
+  },
+  "search:zurich": {
+    "city": "Zúrich",
+    "country": "Suiza",
+    "countryCode": "CH",
+    "display": "Zúrich, Bezirk Zürich, Zúrich, Suiza",
+    "lat": 47.37445,
+    "lon": 8.54104,
+    "type": "city"
+  }
+}

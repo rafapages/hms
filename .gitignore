@@ -1,0 +1,6 @@
+# Originals never get committed (public repo); they live in Dropbox.
+originals/
+tools/review.csv
+.venv/
+__pycache__/
+.DS_Store

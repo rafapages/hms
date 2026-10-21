@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#F5EFE4">
+<title>La Vuelta al Mundo en H&amp;M</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='11' fill='%23C8102E' stroke='%23FBF8F2' stroke-width='4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app" id="app" data-view="map">
+
+  <header class="top">
+    <div class="brand">
+      <h1>La Vuelta al Mundo en <span class="accent">H&amp;M</span></h1>
+      <svg class="squiggle" width="300" height="14" viewBox="0 0 300 14" aria-hidden="true"><path d="M2 9 C 60 3, 120 12, 180 6 S 270 4, 298 8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+      <p class="lede" data-lede-map>Las fotos de la familia en tiendas H&amp;M de todo el mundo.</p>
+      <p class="lede" data-lede-gallery>Las fotos, ordenadas por fecha.</p>
+      <p class="mini-stats" id="miniStats"></p>
+    </div>
+    <nav class="views" aria-label="Vistas">
+      <a href="#mapa" data-view-link="map">Mapa</a>
+      <a href="#galeria" data-view-link="gallery">Galería</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Menú: galería, ruta y línea del tiempo" aria-expanded="false" aria-controls="menu">
+      <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M3 5h12M3 9h12M3 13h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </header>
+
+  <main class="view view-map" id="viewMap">
+    <section class="stats" id="stats" aria-label="Estadísticas"></section>
+
+    <section class="map-wrap" id="mapWrap" aria-label="Mapa">
+      <div id="map" class="map"></div>
+
+      <div class="map-controls-left" id="routeSlot">
+        <button class="route-toggle" id="routeToggle" aria-pressed="false">
+          <span class="switch" aria-hidden="true"><span></span></span>
+          Ruta
+        </button>
+      </div>
+
+      <div class="zoom" role="group" aria-label="Zoom">
+        <button id="zoomIn" aria-label="Acercar"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v12M2 8h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+        <span class="zoom-sep"></span>
+        <button id="zoomOut" aria-label="Alejar"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+      </div>
+
+      <div class="legend" aria-label="Leyenda">
+        <span><span class="lg lg-gps"></span>Lugar exacto (GPS)</span>
+        <span><span class="lg lg-city"></span>Centro de la ciudad</span>
+        <span><span class="lg lg-many">5</span>Varias fotos</span>
+      </div>
+
+      <button class="sticker" id="sticker" hidden>
+        <span class="sticker-q">¿Próximo destino?</span>
+        <span class="sticker-a" id="stickerCountry"></span>
+      </button>
+
+      <div class="card" id="card" role="dialog" aria-live="polite" hidden></div>
+    </section>
+
+    <div id="timelineSlot">
+      <section class="timeline" id="timeline" aria-label="Línea del tiempo">
+        <button class="play" id="play" aria-label="Reproducir los años">
+          <svg class="i-play" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M5 3l10 6-10 6z" fill="currentColor"/></svg>
+          <svg class="i-pause" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M5 3h3v12H5zM10 3h3v12h-3z" fill="currentColor"/></svg>
+        </button>
+        <div class="tl-body">
+          <div class="tl-head">
+            <label for="years">Línea del tiempo</label>
+            <span class="tl-year" id="yearLabel"></span>
+          </div>
+          <input id="years" type="range" min="2000" max="2026" step="1" value="2026">
+          <div class="tl-ends"><span id="yearMin"></span><span id="yearMax"></span></div>
+        </div>
+        <button class="link-btn" id="allYears">Ver todos los años</button>
+      </section>
+    </div>
+  </main>
+
+  <main class="view view-gallery" id="viewGallery" hidden>
+    <div class="group-by" role="group" aria-label="Agrupar">
+      <span>Agrupar por</span>
+      <button class="chip" data-group="year" aria-pressed="true">Año</button>
+      <button class="chip" data-group="country" aria-pressed="false">País</button>
+    </div>
+    <div id="gallery"></div>
+  </main>
+
+  <div class="menu" id="menu" hidden>
+    <div class="menu-inner">
+      <nav class="menu-views" aria-label="Vistas">
+        <a href="#mapa" data-view-link="map">Mapa</a>
+        <a href="#galeria" data-view-link="gallery">Galería</a>
+      </nav>
+      <div id="menuRouteSlot"></div>
+      <div id="menuTimelineSlot"></div>
+    </div>
+  </div>
+
+  <section class="sheet" id="sheet" role="dialog" hidden></section>
+</div>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" hidden>
+  <div class="lb-top">
+    <span class="lb-count" id="lbCount"></span>
+    <button class="lb-btn" id="lbClose" aria-label="Cerrar"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M4 4l10 10M14 4L4 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+  </div>
+  <div class="lb-stage">
+    <button class="lb-btn lb-nav" id="lbPrev" aria-label="Foto anterior"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M12.5 4l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <figure class="lb-figure" id="lbFigure">
+      <img id="lbImg" alt="">
+      <figcaption id="lbCaption"></figcaption>
+    </figure>
+    <button class="lb-btn lb-nav" id="lbNext" aria-label="Foto siguiente"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M7.5 4l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  </div>
+  <div class="lb-strip" id="lbStrip" role="group" aria-label="Fotos en esta ciudad"></div>
+</div>
+
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

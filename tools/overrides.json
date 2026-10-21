@@ -1,0 +1,74 @@
+{
+  "_help": "Manual fixes; they always win. 'places' maps a parsed filename place (lowercase) to a better geocoding query, or to {query, city} to also fix the shown name. 'countries' shortens country names by ISO code. 'photos' is keyed by exact filename and accepts: place, use ('gps' | 'filename'), takenAt ('YYYY-MM-DD', 'YYYY-MM-DDTHH:MM:SS' or null), dateApprox ('month' = only the month is known; shown as '~ OCT 2025'), city, country, countryCode, lat, lon, caption, people, skip, ignoreGps.",
+  "places": {
+    "bourdeaux": "Bordeaux, France",
+    "guille n.y": "New York City",
+    "londres": {
+      "query": "London, England",
+      "city": "Londres"
+    },
+    "santiiago de chile": {
+      "query": "Santiago de Chile",
+      "city": "Santiago de Chile"
+    },
+    "shenzen": "Shenzhen",
+    "tokio": {
+      "query": "Tokyo",
+      "city": "Tokio"
+    }
+  },
+  "countries": {
+    "US": "Estados Unidos"
+  },
+  "photos": {
+    "Alemania.JPG": {
+      "place": "Frankfurt am Main",
+      "city": "Fráncfort"
+    },
+    "Badajoz.JPG": {
+      "takenAt": "2012-11-02"
+    },
+    "Copenhague.jpg": {
+      "takenAt": "2009-11-27"
+    },
+    "Düsseldorf-1.JPG": {
+      "takenAt": "2013-12-09T21:00:00"
+    },
+    "Düsseldorf-2.JPG": {
+      "takenAt": "2013-12-09T21:00:00"
+    },
+    "Guille N.Y.JPG": {
+      "people": [
+        "Guille"
+      ]
+    },
+    "Munich.jpg": {
+      "takenAt": "2009-11-27"
+    },
+    "Napoles.jpg": {
+      "takenAt": "2021-11-06"
+    },
+    "Osaka (1).jpg": {
+      "takenAt": "2025-10-30"
+    },
+    "Roma.jpg": {
+      "use": "filename"
+    },
+    "Shenzen.jpeg": {
+      "takenAt": "2025-11-17"
+    },
+    "Sofia 2024.JPG": {
+      "takenAt": "2024-11-18"
+    },
+    "Sofia.JPG": {
+      "takenAt": "2024-06-19"
+    },
+    "Taipei.jpg": {
+      "takenAt": "2025-10-15",
+      "dateApprox": "month"
+    },
+    "Tokio.jpg": {
+      "takenAt": "2025-10-31"
+    }
+  }
+}
