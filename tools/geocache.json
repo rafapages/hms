@@ -26,6 +26,15 @@
     "lon": -87.08079,
     "type": "city"
   },
+  "reverse:22.995,120.206": {
+    "city": "中西區",
+    "country": "Taiwán",
+    "countryCode": "TW",
+    "display": "中西區, 三份仔, 臺南市, 700, Taiwán",
+    "lat": 22.99215,
+    "lon": 120.20596,
+    "type": "suburb"
+  },
   "reverse:34.015,-118.495": {
     "city": "Santa Mónica",
     "country": "Estados Unidos de América",
@@ -178,6 +187,15 @@
     "lat": 52.44249,
     "lon": 4.82986,
     "type": "town"
+  },
+  "reverse:53.344,-6.261": {
+    "city": "Dublín",
+    "country": "Irlanda",
+    "countryCode": "IE",
+    "display": "Dublín, County Dublin, Leinster, Irlanda",
+    "lat": 53.34938,
+    "lon": -6.26056,
+    "type": "city"
   },
   "reverse:53.349,-6.265": {
     "city": "Dublín",
@@ -663,6 +681,24 @@
     "display": "Stuttgart, Baden-Wurtemberg, Alemania",
     "lat": 48.77845,
     "lon": 9.18001,
+    "type": "city"
+  },
+  "search:tainan": {
+    "city": "臺南市",
+    "country": "Taiwán",
+    "countryCode": "TW",
+    "display": "臺南市, Taiwán",
+    "lat": 22.99123,
+    "lon": 120.18498,
+    "type": "city"
+  },
+  "search:tainan, taiwan": {
+    "city": "臺南市",
+    "country": "Taiwán",
+    "countryCode": "TW",
+    "display": "臺南市, Taiwán",
+    "lat": 22.99123,
+    "lon": 120.18498,
     "type": "city"
   },
   "search:taipei": {
