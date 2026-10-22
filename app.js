@@ -24,11 +24,12 @@ function yearOf(p) {
 }
 
 // '2019-06-14T17:42:00' -> '14 JUN 2019 · 17:42'. Local camera time, no timezone maths.
-// Dates only known to the month (dateApprox: 'month') read '~ OCT 2025'.
+// Dates only known to the month (dateApprox: 'month') read '~ OCT 2025'; to the year ('year'), '~ 2011'.
 function fmtDate(p, { year = true, time = true } = {}) {
   if (!p.takenAt) return 'Sin fecha';
   const [, y, m, d, hh, mm] = p.takenAt.match(/^(\d{4})-(\d{2})-(\d{2})(?:T(\d{2}):(\d{2}))?/) || [];
   if (!y) return 'Sin fecha';
+  if (p.dateApprox === 'year') return `~ ${y}`;
   if (p.dateApprox === 'month') return year ? `~ ${MONTHS[+m - 1]} ${y}` : `~ ${MONTHS[+m - 1]}`;
   let out = `${d} ${MONTHS[+m - 1]}`;
   if (year) out += ` ${y}`;

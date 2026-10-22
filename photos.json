@@ -1,23 +1,5 @@
 [
  {
-  "id": "francfort-2003-02-02",
-  "image": "img/francfort-2003-02-02.webp",
-  "thumb": "img/thumbs/francfort-2003-02-02.webp",
-  "w": 1600,
-  "h": 1200,
-  "lat": 50.11064,
-  "lon": 8.68209,
-  "precision": "city",
-  "city": "Fráncfort",
-  "country": "Alemania",
-  "countryCode": "DE",
-  "takenAt": "2003-02-02T03:48:15",
-  "dateApprox": null,
-  "camera": "SONY DSC-P8",
-  "caption": null,
-  "people": []
- },
- {
   "id": "praga-2007-08-29",
   "image": "img/praga-2007-08-29.webp",
   "thumb": "img/thumbs/praga-2007-08-29.webp",
@@ -340,6 +322,24 @@
   "takenAt": "2010-12-18T17:50:17",
   "dateApprox": null,
   "camera": "PENTAX Optio E85",
+  "caption": null,
+  "people": []
+ },
+ {
+  "id": "francfort-2011-01-01",
+  "image": "img/francfort-2011-01-01.webp",
+  "thumb": "img/thumbs/francfort-2011-01-01.webp",
+  "w": 1600,
+  "h": 1200,
+  "lat": 50.11064,
+  "lon": 8.68209,
+  "precision": "city",
+  "city": "Fráncfort",
+  "country": "Alemania",
+  "countryCode": "DE",
+  "takenAt": "2011-01-01",
+  "dateApprox": "year",
+  "camera": "SONY DSC-P8",
   "caption": null,
   "people": []
  },

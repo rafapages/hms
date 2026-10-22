@@ -1,5 +1,5 @@
 {
-  "_help": "Manual fixes; they always win. 'places' maps a parsed filename place (lowercase) to a better geocoding query, or to {query, city} to also fix the shown name. 'countries' shortens country names by ISO code. 'photos' is keyed by exact filename and accepts: place, use ('gps' | 'filename'), takenAt ('YYYY-MM-DD', 'YYYY-MM-DDTHH:MM:SS' or null), dateApprox ('month' = only the month is known; shown as '~ OCT 2025'), city, country, countryCode, lat, lon, caption, people, skip, ignoreGps.",
+  "_help": "Manual fixes; they always win. 'places' maps a parsed filename place (lowercase) to a better geocoding query, or to {query, city} to also fix the shown name. 'countries' shortens country names by ISO code. 'photos' is keyed by exact filename and accepts: place, use ('gps' | 'filename'), takenAt ('YYYY-MM-DD', 'YYYY-MM-DDTHH:MM:SS' or null), dateApprox ('month' = only the month is known, shown as '~ OCT 2025'; 'year' = only the year, shown as '~ 2011'), city, country, countryCode, lat, lon, caption, people, skip, ignoreGps.",
   "places": {
     "bourdeaux": "Bordeaux, France",
     "guille n.y": "New York City",
@@ -27,7 +27,9 @@
   "photos": {
     "Alemania.JPG": {
       "place": "Frankfurt am Main",
-      "city": "Fráncfort"
+      "city": "Fráncfort",
+      "takenAt": "2011-01-01",
+      "dateApprox": "year"
     },
     "Badajoz.JPG": {
       "takenAt": "2012-11-02"
