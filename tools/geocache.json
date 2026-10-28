@@ -8,6 +8,15 @@
     "lon": 103.85191,
     "type": "city"
   },
+  "reverse:10.778,106.702": {
+    "city": "Phường Sài Gòn",
+    "country": "Vietnam",
+    "countryCode": "VN",
+    "display": "Phường Sài Gòn, Ciudad Ho Chi Minh, 71016, Vietnam",
+    "lat": 10.7792,
+    "lon": 106.69993,
+    "type": "suburb"
+  },
   "reverse:13.726,100.509": {
     "city": "Bangkok",
     "country": "Tailandia",
@@ -422,6 +431,15 @@
     "lon": 24.94354,
     "type": "city"
   },
+  "search:ho chi minh city": {
+    "city": "Ciudad Ho Chi Minh",
+    "country": "Vietnam",
+    "countryCode": "VN",
+    "display": "Ciudad Ho Chi Minh, Vietnam",
+    "lat": 10.77373,
+    "lon": 106.7166,
+    "type": "city"
+  },
   "search:hollywood": {
     "city": "Hollywood",
     "country": "Estados Unidos de América",
@@ -430,6 +448,15 @@
     "lat": 34.098,
     "lon": -118.32952,
     "type": "suburb"
+  },
+  "search:kuala lumpur": {
+    "city": "Kuala Lumpur",
+    "country": "Malasia",
+    "countryCode": "MY",
+    "display": "Kuala Lumpur, Malasia",
+    "lat": 3.1517,
+    "lon": 101.69424,
+    "type": "city"
   },
   "search:las palmas": {
     "city": "Las Palmas de Gran Canaria",

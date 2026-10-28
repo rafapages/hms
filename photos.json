@@ -974,6 +974,24 @@
   "people": []
  },
  {
+  "id": "ciudad-ho-chi-minh-2018-09-18",
+  "image": "img/ciudad-ho-chi-minh-2018-09-18.webp",
+  "thumb": "img/thumbs/ciudad-ho-chi-minh-2018-09-18.webp",
+  "w": 1200,
+  "h": 1600,
+  "lat": 10.77822,
+  "lon": 106.70165,
+  "precision": "gps",
+  "city": "Ciudad Ho Chi Minh",
+  "country": "Vietnam",
+  "countryCode": "VN",
+  "takenAt": "2018-09-18T17:55:22",
+  "dateApprox": null,
+  "camera": "iPhone 8",
+  "caption": null,
+  "people": []
+ },
+ {
   "id": "roma-2018-10-15",
   "image": "img/roma-2018-10-15.webp",
   "thumb": "img/thumbs/roma-2018-10-15.webp",
@@ -1258,6 +1276,24 @@
   "takenAt": "2026-09-24T15:24:49",
   "dateApprox": null,
   "camera": "iPhone 17 Pro",
+  "caption": null,
+  "people": []
+ },
+ {
+  "id": "kuala-lumpur-sin-fecha-e701c2",
+  "image": "img/kuala-lumpur-sin-fecha-e701c2.webp",
+  "thumb": "img/thumbs/kuala-lumpur-sin-fecha-e701c2.webp",
+  "w": 1600,
+  "h": 1200,
+  "lat": 3.1517,
+  "lon": 101.69424,
+  "precision": "city",
+  "city": "Kuala Lumpur",
+  "country": "Malasia",
+  "countryCode": "MY",
+  "takenAt": null,
+  "dateApprox": null,
+  "camera": null,
   "caption": null,
   "people": []
  }
