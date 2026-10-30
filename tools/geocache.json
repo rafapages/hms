@@ -152,6 +152,15 @@
     "lon": 6.08386,
     "type": "city"
   },
+  "reverse:50.850,4.352": {
+    "city": "Bruselas",
+    "country": "Bélgica",
+    "countryCode": "BE",
+    "display": "Bruselas, Bruselas-Capital, Bélgica",
+    "lat": 50.84674,
+    "lon": 4.35249,
+    "type": "city"
+  },
   "reverse:50.889,5.977": {
     "city": "Heerlen",
     "country": "Países Bajos",
@@ -303,6 +312,15 @@
     "display": "Burdeos, Gironda, Nueva Aquitania, Francia metropolitana, Francia",
     "lat": 44.84123,
     "lon": -0.58004,
+    "type": "city"
+  },
+  "search:brussels": {
+    "city": "Bruselas",
+    "country": "Bélgica",
+    "countryCode": "BE",
+    "display": "Bruselas, Bruselas-Capital, Bélgica",
+    "lat": 50.84674,
+    "lon": 4.35249,
     "type": "city"
   },
   "search:budapest": {

@@ -920,6 +920,24 @@
   "people": []
  },
  {
+  "id": "bruselas-2017-11-18",
+  "image": "img/bruselas-2017-11-18.webp",
+  "thumb": "img/thumbs/bruselas-2017-11-18.webp",
+  "w": 1200,
+  "h": 1600,
+  "lat": 50.84982,
+  "lon": 4.35233,
+  "precision": "gps",
+  "city": "Bruselas",
+  "country": "Bélgica",
+  "countryCode": "BE",
+  "takenAt": "2017-11-18T18:04:56",
+  "dateApprox": null,
+  "camera": "iPhone SE",
+  "caption": null,
+  "people": []
+ },
+ {
   "id": "glasgow-2018-05-04",
   "image": "img/glasgow-2018-05-04.webp",
   "thumb": "img/thumbs/glasgow-2018-05-04.webp",
